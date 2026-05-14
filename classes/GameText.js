@@ -4,7 +4,7 @@ class GameText {
     constructor() {
         this.props = {
             textColor: [],
-            textFontSize: 20,
+            textFontSize: 32,
             font:null
         }
     }
@@ -18,7 +18,7 @@ class GameText {
     }
 
     setupFont = () => {
-        textFont(loadFont("assets/8bit.ttf"));
+        // textFont(loadFont("assets/8bit.ttf"));
         textSize(this.props.textFontSize);
         textAlign(CENTER);
     }
